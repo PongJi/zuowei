@@ -43,6 +43,9 @@ ul,li{
 .header .top .top-one .left .sethome{
 	cursor: pointer;
 }
+.header .top .top-one .left .sethome:hover{
+	color: #01af63;
+}
 .header .top .top-one .right{
 	float: right;
 	color: #999999;
@@ -148,6 +151,9 @@ ul,li{
 	line-height: 51px;
 	text-align: center;
 	width: 101px;
+	font-size: 16px;
+	color: #ffffff;
+	cursor: pointer;
 }
 .nav-container .nav .nav-list li a{
 	display: block;
@@ -184,7 +190,7 @@ ul,li{
 	position: absolute;
 	top: 51px;
 	margin-top: 1px;
-	display: none;
+	/* display: none; */
 }
 .goods-banner .all-goods{
 	float: left;
@@ -218,10 +224,14 @@ ul,li{
 	background: #01af63;
 }
 .goods-banner .banner{
+	position: relative;
 	float: right;
 	width: 954px;
 	height: 300px;
-	position: relative;
+	overflow: hidden;
+}
+.goods-banner .banner .pic{
+	width: 4770px;
 }
 .goods-banner .banner .pic li{
 	position: absolute;
@@ -229,10 +239,55 @@ ul,li{
 	right: 0;
 	display: none;
 }
-.goods-banner .banner img{
+.goods-banner .banner .pic li img{
 	display: block;
 	width: 954px;
 	height: 300px;
+}
+.goods-banner .banner .light{
+	position: absolute;
+	right: 13px;
+	bottom: 13px;
+	font-size: 0;
+}
+.goods-banner .banner .light li{
+	display: inline-block;
+	margin-left: 8px;
+	width: 13px;
+	height: 13px;
+	background: #ccc;
+	cursor: pointer;
+}
+.goods-banner .banner .light li:hover{
+	background: #666;
+}
+.goods-banner .banner .light .active{
+	background: #666;
+}
+.goods-banner .banner span{
+	width: 50px;
+	height: 70px;
+	background: #d6d6d6;
+	opacity: 0.5;
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	line-height: 70px;
+	cursor: pointer;
+}
+.goods-banner .banner span:hover{
+	background: #999;
+	opacity: 1;
+}
+.goods-banner .banner .prev{
+	position: absolute;
+	top: 115px;
+	left: 0;
+}
+.goods-banner .banner .next{
+	position: absolute;
+	top: 115px;
+	right: 0;
 }
 .content{
 	margin-top: 24px;
@@ -650,4 +705,3 @@ ul,li{
 	font-size: 12px;
 	color: #666;
 }
-
