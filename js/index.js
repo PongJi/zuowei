@@ -36,7 +36,9 @@ window.onload = function() {
 	Ogoods.style.display = 'none';
 
 	Oli.addEventListener('mouseenter',function(){	
+		this.style.background = '#01af63';
 		if(Opic.style.display == 'none'){ 
+			this.style.background = '#404144';
          	Opic.style.display = 'block';
          	Ogoods.style.display = 'none';        	
             Ocontent.style.marginTop = 24+'px';
